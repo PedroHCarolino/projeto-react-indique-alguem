@@ -1,0 +1,12 @@
+.newendereco_container{
+    widht: 450px;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.newendereco_container h1 {
+    margin-bottom: 0.5em;
+    
+    position: relative;
+    color: rgb(40, 121, 168);
+}

@@ -1,0 +1,94 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(40, 121, 168);
+    padding: 1em;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.item {
+    margin-right: 1em;
+}
+
+.item a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: rgb(186, 225, 248);
+}
+
+.container_modal {
+    margin-top: 50%;
+    left: 50%;
+    right: 50%;
+}
+
+.form_modal {
+    margin-top: 2em;
+    color: rgb(40, 121, 168);
+}
+
+.button_modal {    
+    border: none;
+    background-color: white;
+    color: rgb(40, 121, 168);
+    padding: 0.3em 0.5em;
+    font-size: 1.1em;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+
+.button_modal:hover {
+    cursor: pointer;
+    background-color: rgb(186, 225, 248);
+    color: rgb(40, 121, 168);
+    
+}
+
+.button_modal_close {
+    background-color: rgb(186, 225, 248);
+    border: none;    
+    color: rgb(40, 121, 168);
+    padding: 0.3em 0.5em;
+    font-size: 1em;
+    transition: 0.5s;
+    border-radius: 5px;
+    font-weight: bold;
+    position:absolute; 
+    top:1px;
+    right:1px;    
+}
+
+.button_modal_close:hover {
+    cursor: pointer;    
+    
+}
+
+.button_new_user {
+    border: none;
+    background-color: white;
+    color: rgb(40, 121, 168);
+    padding: 0.3em 0.5em;
+    font-size: 1.1em;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.criar_conta {
+    color: rgb(40, 121, 168);
+    font-weight: bold;
+    margin-top: 2em;
+    padding:  0.5em;
+}
+
+

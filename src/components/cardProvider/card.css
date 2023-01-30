@@ -1,0 +1,258 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.card-pai {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  background-color: black;
+  margin-top: 20rem;
+}
+
+.card-f1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22vw;
+  height: 30vh;
+  position: absolute;
+  z-index: 100;
+  background-color: rgb(232, 255, 247);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  margin-left: 25rem;
+}
+
+.card-f1 #pef1 a {
+  position: absolute;
+  margin-top: 3rem;
+  margin-left: -1.5rem;
+  color:rgb(0, 0, 0);
+}
+
+.card-f1 #loc1 {
+  font-size: 0.6rem;
+  color: black;
+  position: absolute;
+  margin-top: 5.5rem;
+  margin-left: -6rem;
+}
+
+.card-f1 #exp1 {
+  font-size: 0.6rem;
+  color: black;
+  position: absolute;
+  margin-top: 5.5rem;
+  margin-left: 7.5rem;
+}
+
+.card-f1 #p1 {
+  font-size: 0.8rem;
+  margin-left: -3.2rem;
+  position: absolute;
+}
+
+.card-f1 #p2 {
+  font-size: 0.8rem;
+  margin-left: 9rem;
+  position: absolute;
+  margin-top: 0.1rem;
+}
+
+.card-f1 .fa-map-marker {
+  position: absolute;
+  margin-left: -5rem;
+}
+
+.card-f1 .fa-clock-o {
+  position: absolute;
+  margin-left: 6rem;
+}
+
+.card-f1 h2 {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  margin: -5rem -2rem 3rem 1rem;
+}
+
+.card-f1 span {
+  font-size: 0.8rem;
+  margin: -1.9rem -1.3rem 3rem 1rem;
+  letter-spacing: 0.1rem;
+  position: absolute;
+}
+
+.card-f1 .img-prestador {
+  width: 6vw;
+  position: absolute;
+  margin-left: -13rem;
+  margin-top: -5rem;
+  border-radius: 2rem;
+}
+
+.card-f2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22vw;
+  height: 30vh;
+  position: absolute;
+  z-index: 100;
+  background-color: rgb(232, 255, 247);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  margin-left: 70rem;
+}
+
+.card-f2 #pef2 a {
+  position: absolute;
+  margin-top: 3.5rem;
+  margin-left: -1.8rem;
+  color:rgb(0, 0, 0);
+}
+
+.card-f2 #loc2 {
+  font-size: 0.6rem;
+  color: black;
+  position: absolute;
+  margin-top: 5.5rem;
+  margin-left: -6rem;
+}
+
+.card-f2 #exp2 {
+  font-size: 0.6rem;
+  color: black;
+  position: absolute;
+  margin-top: 5.5rem;
+  margin-left: 7rem;
+}
+
+.card-f2 #p3 {
+  font-size: 0.8rem;
+  margin-left: -3.2rem;
+  position: absolute;
+}
+
+.card-f2 #p4 {
+  font-size: 0.8rem;
+  margin-left: 9.5rem;
+  position: absolute;
+  margin-top: 0.1rem;
+}
+
+.card-f2 .fa-map-marker {
+  position: absolute;
+  margin-left: -5rem;
+}
+
+.card-f2 .fa-clock-o {
+  position: absolute;
+  margin-left: 6rem;
+}
+
+.card-f2 h2 {
+  color: rgb(2, 2, 2);
+  position: absolute;
+  margin: -5rem 0.3rem 3rem 1rem;
+}
+
+.card-f2 span {
+  font-size: 0.8rem;
+  margin: -1.9rem -2rem 3rem 1rem;
+  letter-spacing: 0.1rem;
+  position: absolute;
+}
+
+.card-f2 .img-prestador1 {
+  width: 6vw;
+  position: absolute;
+  margin-left: -13rem;
+  margin-top: -5rem;
+  border-radius: 2rem;
+}
+
+.card-f3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22vw;
+  height: 30vh;
+  position: absolute;
+  z-index: 100;
+  background-color: rgb(232, 255, 247);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  margin-left: 115rem;
+}
+
+.card-f3 #pef3 a {
+  position: absolute;
+  margin-top: 3.5rem;
+  margin-left: -5.2rem;
+  color:rgb(0, 0, 0);
+}
+
+.card-f3 #loc3 {
+  font-size: 0.6rem;
+  color: black;
+  position: absolute;
+  margin-top: 5.5rem;
+  margin-left: -4rem;
+}
+
+.card-f3 #exp3 {
+  font-size: 0.6rem;
+  color: black;
+  position: absolute;
+  margin-top: 5.5rem;
+  margin-left: 9rem;
+}
+
+.card-f3 #p5 {
+  font-size: 0.8rem;
+  margin-left: -3.2rem;
+  position: absolute;
+}
+
+.card-f3 #p6 {
+  font-size: 0.8rem;
+  margin-left: 9rem;
+  position: absolute;
+  margin-top: 0.1rem;
+}
+
+.card-f3 .fa-map-marker {
+  position: absolute;
+  margin-left: -5rem;
+}
+
+.card-f3 .fa-clock-o {
+  position: absolute;
+  margin-left: 5rem;
+}
+
+.card-f3 h2 {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  margin: -5rem 1.2rem 3rem 1rem;
+}
+
+.card-f3 span {
+  font-size: 0.8rem;
+  margin: -1.9rem 0.7rem 3rem 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.card-f3 .img-prestador2 {
+  width: 6vw;
+  position: absolute;
+  margin-left: -13rem;
+  margin-top: -5rem;
+  border-radius: 2rem;
+}

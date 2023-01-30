@@ -1,0 +1,21 @@
+.form_advogado {
+    widht: 100%;
+    margin: 2em 0;
+    color: rgb(40, 121, 168);
+}
+
+.contratar {
+    display: relative;
+          
+    color: red;
+    margin-top: 1.5em;
+    padding: 1em 1em 1em 5em;
+}
+
+.mensagem {
+    display: relative;
+          
+    color: red;
+    margin-top: -3.3em;
+    padding: 1em 10em 15em 15em;
+}

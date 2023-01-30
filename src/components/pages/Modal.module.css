@@ -1,0 +1,86 @@
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(40, 121, 168);
+  padding: 0 0.2em;
+}
+
+.container {
+  background-color: rgb(186, 225, 248);
+  color: black;
+  width: 30%;
+  height: 60%;
+  border-radius: 20px;
+}
+
+.form_modal {
+  margin-top: 0.2em;
+  color: rgb(40, 121, 168);
+  padding: 2em;
+}
+
+.close {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 25px;
+  height: 35px;
+  right: calc(-100% + 20px);
+  top: 5px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  align-items: center;
+  color: red;
+}
+
+.close::before,
+.close::after {
+  content: " ";
+  position: absolute;
+  width: 2.5px;
+  height: 25px;
+  background-color: rgb(40, 121, 168);
+  transform: rotate(45deg);
+}
+
+.close::after {
+  transform: rotate(-45deg);
+}
+
+.criar_conta {
+  color: rgb(40, 121, 168);
+  font-weight: bold;
+  margin-top: 2em;
+  text-align: center;
+}
+
+
+.btn {
+  background-color: white;
+  color: rgb(40, 121, 168);
+  padding: 0.5em 1em;
+  text-decoration: none;
+  transition: 0.5s;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(40, 121, 168);
+  color: white;
+}
