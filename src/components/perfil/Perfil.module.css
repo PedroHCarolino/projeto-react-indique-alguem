@@ -1,0 +1,23 @@
+.container_perfil {
+    display:flex;
+    
+    min-height: 90vh;
+}
+
+.aside_informacoes{
+    margin: 1% 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1em;
+  }
+
+.main_dados{
+    margin: 1% 0 0 0;
+    padding: 1em;
+    width: 100%;
+  }
+
+ 
+
+

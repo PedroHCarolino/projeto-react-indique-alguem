@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import Select from "../form/Select";
+import Select from "../formulario/Select";
 import styles from "./CadastroForm.module.css";
 import { toast } from "react-toastify";
 // import LinkButton from "../layout/LinkButton";

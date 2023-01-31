@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 // import { useForm } from 'react-hook-form'
 import styles from './Contato.module.css'
-import Input from '../form/Input'
-import SubmitButton from '../form/SubmitButton'
-import LinkButton from '../layout/LinkButton'
+import Input from '../components/formulario/Input'
+import SubmitButton from '../components/formulario/SubmitButton'
+import LinkButton from '../components/layout/LinkButton'
 
 
 function Contato ({btnText}) {

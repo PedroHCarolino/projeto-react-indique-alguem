@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import Container from "./Container";
 import styles from "./Navbar.module.css";
 import logo from "../../img/logo_ia.png";
-import Modal from "../pages/Modal";
-import Input from "../form/Input";
+import Modal from "../../pages/Modal";
+import Input from "../formulario/Input";
 import LinkButton from "../layout/LinkButton";
 
 function Navbar() {

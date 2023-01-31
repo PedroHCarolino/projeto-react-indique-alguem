@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import Inicio from './components/pages/Inicio'
-import Profissionais from './components/pages/Profissionais';
-import Sobre from './components/pages/Sobre';
-import Contato from './components/pages/Contato';
-import NewContato from './components/pages/NewContato';
-import NewUsuario from './components/pages/NewUsuario';
+import Inicio from './pages/Inicio'
+import Profissionais from './pages/Profissionais';
+import Sobre from './pages/Sobre';
+import Contato from './pages/Contato';
+import NewContato from './pages/NewContato';
+import NewUsuario from './pages/NewUsuario';
 
 // import AppLayout from './components/layout/AppLayout'
 
@@ -13,11 +13,12 @@ import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Endereco from './components/Cadastro/Endereco';
+import Perfil from './components/perfil/Perfil';
 import Advogado from './components/profissoes/Advogado';
-import Modal from './components/pages/Modal';
+import Modal from './pages/Modal';
 import TelaPro from './components/profissoes/TelaPro'
 import Cards from './components/profissoes/Cards'
-// import ModalLogin from './components/pages/Modal';
+import Logar from './pages/Logar';
 
 function App() {
   
@@ -34,7 +35,9 @@ function App() {
           <Route exact path='/newusuario' element={<NewUsuario />} />
           <Route exact path='/endereco/:id' element={<Endereco />} />
           <Route exact path='/newcontato' element={<NewContato />} />
+          <Route exact path='/logar' element={<Logar />} />
           <Route exact path='/telapro' element={<TelaPro />} />
+          <Route exact path='/perfil' element={<Perfil />} />
           <Route exact path='/cards' element={<Cards />} />
           <Route exact path='/advogado' element={<Advogado />} />
 

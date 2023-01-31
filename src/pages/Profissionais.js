@@ -1,4 +1,4 @@
-import Profissoes from "../profissoes/Profissoes";
+import Profissoes from "../components/profissoes/Profissoes";
 import styles from "./Newp.module.css";
 
 function Profissionais() {

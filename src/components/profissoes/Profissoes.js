@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import "../cardProvider/card.css";
-import styles from '../form/Input.module.css'
+import "../cardPrestador/card.css";
+import styles from '../formulario/Input.module.css'
 import img from "../../img/foto2.jpeg";
 // import img1 from "../../img/testeimgfeia.jpg";
 // import img2 from "../../img/xuxameneguel.jpg";

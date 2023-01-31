@@ -58,28 +58,38 @@ export default function ClientesListagem() {
     // setLoading(false);
   };
 
-  // async function handleDelete(id){
-  //   if(window.confirm("Deseja realmente excluir este Cliente?")){
-  //     var result = await api.delete('/api/clientes/'+id);
-  //     if(result.status ===200){
-  //       window.location.href = '/admin/clientes';
-  //     }else{
-  //       alert('Ocorreu um erro. Por favor, tente novamente!');
-  //     }
-  //   }
-  // }
+  // const filtrarUsuario = usuario.filter((usuario) => usuario.startsWith())
+
+  const preencheTabelaUsuario = () => {
+    return usuario.map((usuario) => (
+        <tr>
+    <TableCell component="th" scope="row">
+      {usuario.nomeCompleto}
+    </TableCell>
+    <TableCell align="center">{usuario.cpfOrCnpj}</TableCell>
+    <TableCell align="center">{usuario.email}</TableCell>
+    <TableCell align="center">{usuario.phone}</TableCell>
+    <TableCell align="right">
+    <ButtonGroup aria-label="outlined primary button group">
+      <Button variant="contained" color="primary" href={'/perfil'+usuario._id}><PersonSearchIcon /> Ver perfil </Button>
+      {/* <Button variant="contained" color="secondary" onClick={() => handleDelete(row._id)}><ClearIcon /></Button> */}
+    </ButtonGroup>
+    </TableCell>                  
+        </tr>
+      ))
+    }
 
   return (
     <div className={classes.root}>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container}>
-          <Grid container spacing={3}>
+          <Grid container spacing={2}>
             <Grid item sm={12}>
-              <Input 
+              <Input
               type='text'
               placeholder='Buscar Profissional'
-              value={usuario}
+              // value={usuario}
               onChange={(e) => setUsuario(e.target.value)}
               />
             <Button style={{marginBottom:10}} variant="contained" color="primary" onClick={(e) => recuperarUsuario(e)}>
@@ -99,34 +109,10 @@ export default function ClientesListagem() {
                           <TableCell align="center">CPF</TableCell>
                           <TableCell align="center">Email</TableCell>
                           <TableCell align="center">Telefone</TableCell>
-                          <TableCell align="center">Rua</TableCell>
-                          <TableCell align="center">Numero</TableCell>
-                          <TableCell align="center">Bairro</TableCell>
-                          <TableCell align="center">Cidade</TableCell>
-                          <TableCell align="center"></TableCell>
                         </TableRow>
                       </TableHead>
                       <TableBody>
-                        {usuario.map((row) => (
-                          <TableRow key={row._id}>
-                            <TableCell component="th" scope="row">
-                              {row.nomeCompleto_usuario}
-                            </TableCell>
-                            <TableCell align="center">{row.cpfOrCnpj_usuario}</TableCell>
-                            <TableCell align="center">{row.email_usuario}</TableCell>
-                            <TableCell align="center">{row.phone_usuario}</TableCell>
-                            <TableCell align="center">{row.logradouro_usuario}</TableCell>
-                            <TableCell align="center">{row.numero_cliente}</TableCell>
-                            <TableCell align="center">{row.bairro_cliente}</TableCell>
-                            <TableCell align="center">{row.cidade_cliente}</TableCell>
-                            <TableCell align="right">
-                            <ButtonGroup aria-label="outlined primary button group">
-                              <Button variant="contained" color="primary" href={'/perfil'+row._id}><PersonSearchIcon /> Ver perfil </Button>
-                              {/* <Button variant="contained" color="secondary" onClick={() => handleDelete(row._id)}><ClearIcon /></Button> */}
-                            </ButtonGroup>
-                            </TableCell>
-                          </TableRow>
-                        ))}
+                        {preencheTabelaUsuario()}
                       </TableBody>
                     </Table>
                   </TableContainer>

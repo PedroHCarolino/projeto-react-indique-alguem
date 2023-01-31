@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import styles from "./Modal.module.css";
-import Input from "../form/Input";
-import LinkButton from "../layout/LinkButton";
+import Input from "../components/formulario/Input";
+import LinkButton from "../components/layout/LinkButton";
 import { toast } from "react-toastify";
 
 const Modal = ({ id = "modal", onClose = () => {}, children }) => {

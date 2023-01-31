@@ -1,7 +1,7 @@
 import styles from './Inicio.module.css';
 
-import savings from '../../img/buscando_prestador.png'
-import LinkButton from '../layout/LinkButton';
+import savings from '../img/buscando_prestador.png'
+import LinkButton from '../components/layout/LinkButton';
 
 
 function Inicio () {
