@@ -31,7 +31,7 @@ const Modal = ({ id = "modal", onClose = () => {}, children }) => {
     }
 
     const resposta = await axios.post(
-      `http://127.0.0.1:3001/usuarios/auth`,
+      `https://indique-alguem-back-end.herokuapp.com/usuarios/auth`,
       {
         email,
         password,

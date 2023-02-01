@@ -6,6 +6,7 @@ import Sobre from './pages/Sobre';
 import Contato from './pages/Contato';
 import NewContato from './pages/NewContato';
 import NewUsuario from './pages/NewUsuario';
+import Modal from './pages/Modal';
 
 // import AppLayout from './components/layout/AppLayout'
 
@@ -15,7 +16,6 @@ import Footer from './components/layout/Footer'
 import Endereco from './components/Cadastro/Endereco';
 import Perfil from './components/perfil/Perfil';
 import Advogado from './components/profissoes/Advogado';
-import Modal from './pages/Modal';
 import TelaPro from './components/profissoes/TelaPro'
 import Cards from './components/profissoes/Cards'
 

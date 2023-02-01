@@ -31,7 +31,7 @@ const Endereco = () => {
       usuarioId: Number(id)
     };
     const response = await axios.post(
-      "http://localhost:3001/endereco",
+      "https://indique-alguem-back-end.herokuapp.com/endereco",
       enderecos,
     );
 

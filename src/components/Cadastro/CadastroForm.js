@@ -36,7 +36,7 @@ const CadastroForm = () => {
     };
 
     const response = await axios.post(
-      "http://127.0.0.1:3001/usuarios",
+      "https://indique-alguem-back-end.herokuapp.com/usuarios",
       usuario
     );
     // .then((res) => {
