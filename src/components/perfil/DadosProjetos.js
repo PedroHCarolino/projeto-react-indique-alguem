@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
-import { FaGithub } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 // import { SkillsItem } from '../../services/data/skill';
 // import { Projetos } from '../../services/data/projetos';
-import styles from './DadosProjetos.module.css'
-import Servicos from './Servicos';
-import { CardsServicos } from '../Cards/CardsServicos';
-
+import styles from "./DadosProjetos.module.css";
+import Servicos from "./Servicos";
+// import { CardsServicos } from '../Cards/CardsServicos';
 
 function DadosProjetos() {
-//   const ItensSkill = SkillsItem;
+  //   const ItensSkill = SkillsItem;
   const [showDados, setShowDados] = useState(true);
   const variants = {
     visible: { opacity: 1 },
     hidden: { opacity: 0 },
-  }
+  };
 
   function handleClickMenu(isTrue) {
     if (isTrue) {
@@ -44,8 +43,22 @@ function DadosProjetos() {
           <>
             <div className={styles.info_dados}>
               <span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Caso queira saber mais sobre mim, pode estar entrando em contato atráves
-                do Linkedin, <b><Link href='https://www.linkedin.com/' target={'_blank'}>Clicando aqui!</Link></b>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum. Caso queira saber mais sobre mim, pode estar
+                entrando em contato atráves do Linkedin,{" "}
+                <b>
+                  <Link href="https://www.linkedin.com/" target={"_blank"}>
+                    Clicando aqui!
+                  </Link>
+                </b>
               </span>
             </div>
             <h1>Galeria de Projetos</h1>
@@ -96,8 +109,8 @@ function DadosProjetos() {
           </>
         )}
       </div>
-    </div >
+    </div>
   );
 }
 
-export default DadosProjetos
+export default DadosProjetos;

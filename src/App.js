@@ -18,7 +18,6 @@ import Advogado from './components/profissoes/Advogado';
 import Modal from './pages/Modal';
 import TelaPro from './components/profissoes/TelaPro'
 import Cards from './components/profissoes/Cards'
-import Logar from './pages/Logar';
 
 function App() {
   
@@ -35,7 +34,6 @@ function App() {
           <Route exact path='/newusuario' element={<NewUsuario />} />
           <Route exact path='/endereco/:id' element={<Endereco />} />
           <Route exact path='/newcontato' element={<NewContato />} />
-          <Route exact path='/logar' element={<Logar />} />
           <Route exact path='/telapro' element={<TelaPro />} />
           <Route exact path='/perfil' element={<Perfil />} />
           <Route exact path='/cards' element={<Cards />} />

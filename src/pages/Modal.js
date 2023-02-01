@@ -9,13 +9,14 @@ import { toast } from "react-toastify";
 const Modal = ({ id = "modal", onClose = () => {}, children }) => {
   const handleOutsideClick = (e) => {
     if (e.target.id === id) onClose();
-  };
+  } 
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const login = async () => {
+  const login = async (e) => {
+    e.preventDefault()
     if (!email && !password) {
       toast("Username ou senha incorretos!", {
         position: "top-right",
@@ -49,7 +50,7 @@ const Modal = ({ id = "modal", onClose = () => {}, children }) => {
         theme: "light",
       });
       localStorage.setItem("usuario", JSON.stringify(resposta.data));
-      navigate("/profissionais"); 
+      navigate("/telapro"); 
     }
   };
   // console.log(login)

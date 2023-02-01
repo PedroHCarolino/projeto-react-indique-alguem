@@ -10,6 +10,7 @@
     "@material-ui/lab": "^4.0.0-alpha.61",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.4",
+    "@types/styled-components": "^5.1.26",
     "axios": "^1.2.3",
     "material-ui-icons": "^1.0.0-beta.36",
     "react": "^18.2.0",
@@ -23,6 +24,7 @@
     "react-table": "^7.8.0",
     "react-toastify": "^9.1.1",
     "sass": "^1.57.1",
+    "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

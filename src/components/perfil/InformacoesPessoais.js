@@ -12,7 +12,7 @@ import {
   FaRegEnvelope,
 } from "react-icons/fa";
 
-import { RedeSociais, Detalhes, DadosEndereco } from "./styles";
+import { RedeSociais, Detalhes, DadosEndereco } from "./Styles";
 
 function InformacoesPessoais() {
   return (
