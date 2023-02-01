@@ -45,7 +45,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ClientesListagem() {
   const classes = useStyles();
-  const [usuario, setUsuario] = useState([]);
+  const [usuario, setUsuario] = useState("");
+  const [usuarios, setUsuarios] = useState([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -54,9 +55,11 @@ export default function ClientesListagem() {
 
   const recuperarUsuario = async () => {
     try {
-      setLoading(true);
-      const resposta = await axios.get("http://localhost:3001/usuarios");
-      setUsuario(resposta.data);
+      if(usuario.length > 2 ) {
+        const resposta = await axios.get(`http://localhost:3001/usuarios/search?nome_completo=${usuario}`);
+        // const resposta = await axios.get("https://indique-alguem-back-end.herokuapp.com/usuarios/search");
+        setUsuarios(resposta.data); 
+      }
     } catch (e) {
       console.log(e);
     } finally {
@@ -65,7 +68,7 @@ export default function ClientesListagem() {
   };
 
   const preencheTabelaUsuario = () => {
-    return usuario.map((usuario) => (
+    return usuarios.map((usuario) => (
       <tr>
         <TableCell component="th" scope="row">
           {usuario.nomeCompleto}
@@ -78,7 +81,7 @@ export default function ClientesListagem() {
             <Button
               variant="contained"
               color="primary"
-              href={"/perfil" + usuario._id}
+              href={"/perfil" + usuario.id}
             >
               <PersonSearchIcon /> Ver perfil{" "}
             </Button>
