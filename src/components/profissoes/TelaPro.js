@@ -56,8 +56,8 @@ export default function ClientesListagem() {
   const recuperarUsuario = async () => {
     try {
       if(usuario.length > 2 ) {
-        const resposta = await axios.get(`http://localhost:3001/usuarios/search?nome_completo=${usuario}`);
-        // const resposta = await axios.get("https://indique-alguem-back-end.herokuapp.com/usuarios/search");
+        // const resposta = await axios.get(`http://localhost:3001/usuarios/search?nome_completo=${usuario}`);
+        const resposta = await axios.get("https://indique-alguem-back-end.herokuapp.com/usuarios/search");
         setUsuarios(resposta.data); 
       }
     } catch (e) {
